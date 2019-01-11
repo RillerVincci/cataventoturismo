@@ -3670,7 +3670,7 @@ input[type="button"].btn-block {
   border-radius: calc(0.25rem - 1px); }
 
 .card-img-top {
-  width: 100%;
+  width: 50%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); }
 
@@ -7271,6 +7271,7 @@ a {
   a:hover {
     text-decoration: none;
     color: #ff5f5f; }
+
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
