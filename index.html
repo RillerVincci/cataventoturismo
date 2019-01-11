@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <title>Catavento Turismo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="images/catavento.png" />
-  
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+      <title>Catavento Turismo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="images/icons/catavento.png" />
+      <link rel="import" href="imports.html"/>
   </head>
   
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Catavento Turismo</a>
+        <a href="#home" class="navbar-brand" >Catavento Turismo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Principal</a></li>
-            <li class="nav-item"><a href="agenda.html" class="nav-link">Agenda</a></li>
+            <li class="nav-item active"><a href="#home" class="nav-link">Principal</a></li>
+            <li class="nav-item"><a href="#agenda" class="nav-link">Agenda</a></li>
+            <li class="nav-item"><a href="#memorias" class="nav-link">Memórias</a></li>
+            <li class="nav-item"><a href="empresa.html" class="nav-link">A Empresa</a></li>
             <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
           </ul>
         </div>
@@ -40,14 +29,14 @@
     </nav>
     <!-- END nav -->
 
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('images/catavento.png'); ">
+    <section class="home-slider owl-carousel" id="home">
+      <div class="slider-item" style="background-image: url('images/cataventoCenter.png');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row slider-text align-items-center">
-              <div class="col-md-7 col-sm-12 ftco-animate">
+              <div class="col-md-6 col-sm-12 ftco-animate">
                 <p class="breadcrumbs">
-                  <h1><span>Bem-vindo(a), viajante!</span></h1>
+                  <h2 style="color:white"><span>Bem-vindo(a), viajante!</span></h2>
                   <h2 style="color:white"></h2>
                 </p>
               </div>
@@ -56,91 +45,174 @@
       </div>      
     </section>
 
-    <section class="ftco-section-2">
-      <div class="container-fluid d-flex">
-        <div class="section-2-blocks-wrapper row no-gutters">
-          <!--<div class="img col-sm-12 col-lg-5" style="background-image: url('images/catavento.png');">
-            <a href="https://vimeo.com/45830194" class="button popup-vimeo"><span class="ion-ios-play"></span></a>
-          </div>-->
-          <div class="text col-lg-12 ftco-animate">
-            <div class="text-inner align-self-start">
-              <h3 align="center">Sobre a Catavento</h3>
-              <p>Somos movidos pela curiosidade de conhecer novos lugares, novos horizontes, pessoas e culturas. 
-                Deste sentimento nasceu a agência Catavento, que convida a todos(as) para colecionar destinos, momentos e histórias!
-              </p>
-              <p>
-                  <b style="color:black">Missão:</b> Proporcionar momentos de lazer alegres e ricos em conhecimento cultural, 
-                  atendendo aos anseios daqueles que gostam de viajar visando qualidade no atendimento, 
-                  valores acessíveis, segurança e criatividade.
-              </p>
-              <p>
-                  <b style="color:black">Visão:</b> Ser reconhecida pela qualidade nos serviços prestados e proporcionar, 
-                  ao maior número de pessoas, memórias positivas inesquecíveis.  
-              </p>
-              <p>
-                  <b style="color:black">Valores:</b> Segurança e organização são as bases dessa instituição; criatividade e respeito à diversidade sociocultural são os pilares; 
-                  e a qualidade no serviço de atendimento a todos os amigos e clientes é o nosso cartão de visita. 
-              </p>
+    <section class="ftco-section">
+        <div class="container">
+          <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <h2>Nossos Serviços</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center">
+                <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-sailboat"></span></div></div>
+                <div class="media-body p-2">
+                  <h3 class="heading">Viagens Particulares</h3>
+                  <p>Sinta-se a vontade para solicitar o orçamento de uma viagem particular</p>
+                </div>
+              </div>      
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center">
+                <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-around"></span></div></div>
+                <div class="media-body p-2">
+                  <h3 class="heading">CVC</h3>
+                  <p>Oferecemos viagens da CVC, com destinos deslumbrantes e inesquecíveis</p>
+                </div>
+              </div>      
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center">
+                <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-compass"></span></div></div>
+                <div class="media-body p-2">
+                  <h3 class="heading">Catavento Histórico</h3>
+                  <p>Explorando destinos históricos, cheias de conhecimento e boas experiências por viajar pelo nosso pais</p>
+                </div>
+              </div>    
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
+              <div class="media block-6 services d-block text-center">
+                <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-map-of-roads"></span></div></div>
+                <div class="media-body p-2">
+                  <h3 class="heading">Catavento Cultural</h3>
+                  <p>Destinos culturais que podem incrementar grandiosamente o seu conhecimento pela diversidade</p>
+                </div>
+              </div>      
             </div>
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="ftco-section ">
+    <section class="ftco-section" id="agenda">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2>Nossos Serviços</h2>
+            <a href="agenda.html" target="_blank"><h2 >Agenda 2019</h2></a>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-sailboat"></span></div></div>
-              <div class="media-body p-2">
-                <h3 class="heading">Viagens Particulares</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-around"></span></div></div>
-              <div class="media-body p-2">
-                <h3 class="heading">CVC</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>      
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-compass"></span></div></div>
-              <div class="media-body p-2">
-                <h3 class="heading">Catavento Histórico</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              </div>
-            </div>    
-          </div>
+            <div class="example-1 travelCard col-lg-4 ">
+                <div class="wrapper"  style="background-image: url('../images/museudoamanha.jpg');">
+                  <div class="date">
+                    <span class="day">13</span>
+                    <span class="month">Jan</span>
+                    <span class="year">2019</span>
+                  </div>
+                  <div class="data">
+                    <div class="content">
+                      <span class="travelDescription">Rio de Janeiro</span>
+                      <h3 class="title"><a href="#">Museu do Amanhã e Museu da Arte do Rio</a></h3>
+                      <p class="text"> 
+                          <br /> É a oportunidade para quem ainda não conheceu esses museus incríveis e também pra quem já foi, 
+                          vale a pena ver de novo! 😁🤗
+                          <br /> O pacote inclui passagem e ingressos para os dois museus. Crianças, idosos, surdos, pessoas 
+                          portadoras de necessidades especiais e professores ganham desconto.
+                          <br /> O valor da viagem é R$ 160,00
+                      </p>
+                      <label for="show-menu" class="menu-button"><span>Mais informações</span></label>
+                    </div>
+    
+                    <input type="checkbox" id="show-menu" />
+    
+                    <ul class="menu-content">
+                      <li>
+                        <p style="color:white;">R$ 160,00</p>
+                      </li>
+                      <li><a><span>R$ 160,00</span></a></li>
+                      <li><a href="#" class="fa fa-comment-o"><span>X</span></a></li>
+                    </ul>
+    
+                  </div>
+                </div>
+            </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block text-center">
-              <div class="d-flex justify-content-center"><div class="icon d-flex justify-content-center mb-3"><span class="align-self-center flaticon-map-of-roads"></span></div></div>
-              <div class="media-body p-2">
-                <h3 class="heading">Catavento Cultural</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <div class="example-1 travelCard col-lg-4" >
+                <div class="wrapper" style="background-image: url('../images/tiradentes.jpg');">
+                  <div class="date">
+                    <span class="day">26 A 27</span>
+                    <span class="month">Jan</span>
+                    <span class="year">2019</span>
+                  </div>
+                  <div class="data">
+                    <div class="content">
+                      <span class="travelDescription">Tiradentes, MG</span>
+                      <h3 class="title"><a href="#">A Mostra de Cinema Tiradentes chega à sua 22ª edição e a Catavento estará presente!</a></h3>
+                      <p class="text">Abrindo o calendário de eventos de 2019 na cidade, o festival exibe diversos longas e curtas metragens,
+                          pré-estreias nacionais, intervenções artísticas, oficinas, debates, shows e uma extensa programação gratuita.
+                        <br />O valor da viagem é R$ 350 e pode ser dividido no depósito bancário, transferência ou cartão. Está incluso passagem, 
+                        hospedagem na @pousadavillaalferes com café da manhã colonial, welcome drink, piscina, sauna e, às tardes, café e chá na recepção.
+                        <br />Se quiser aproveitar um dia de evento e lazer na cidade, também faremos um bate e volta, no dia 26 de janeiro (sábado). 
+                        <br />O valor é R$ 70 e também pode ser divido no depósito ou cartão.
+                      </p>
+                      <label for="show-menu" class="menu-button"><span>Mais informações</span></label>
+                    </div>
+    
+                    <input type="checkbox" id="show-menu" />
+    
+                    <ul class="menu-content">
+                      <li>
+                        <p style="color:white;">R$ 650,00</p>
+                      </li>
+                      <li><a><span>R$ 650,00</span></a></li>
+                      <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
+                    </ul>
+                </div>
               </div>
-            </div>      
-          </div>
-        </div>
+            </div>
+
+            <div class="example-1 travelCard col-lg-4 ">
+              <div class="wrapper"  style="background-image: url('../images/arraial.jpg');">
+                <div class="date">
+                  <span class="day">18 A 20</span>
+                  <span class="month">Jan</span>
+                  <span class="year">2019</span>
+                </div>
+                <div class="data">
+                  <div class="content">
+                    <span class="travelDescription">Arraial do Cabo, RJ</span>
+                    <h3 class="title"><a href="#">Mar, sombra e água fresca.</a></h3>
+                    <p class="text">É o que te espera nos dias 18, 19 e 20 de janeiro.
+                      Três dias reservados para apreciar a natureza, relaxar e aproveitar.
+                      <br />O valor da viagem é R$ 675 e pode ser dividido em 3 vezes no depósito 
+                      bancário, transferência ou em até 10 vezes no cartão de crédito.
+                    </p>
+                    <label for="show-menu" class="menu-button"><span>Mais informações</span></label>
+                  </div>
+
+                  <input type="checkbox" id="show-menu" />
+
+                  <ul class="menu-content">
+                    <li>
+                      <p style="color:white;">R$ 650,00</p>
+                    </li>
+                    <li><a><span>R$ 650,00</span></a></li>
+                    <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          
+        </div> <!-- Finish-->
       </div>
     </section>
-
-    <section class="ftco-section">
+    
+    <section class="ftco-section" id="memorias">
       <div class="container-fluid">
         <div class="row no-gutters justify-content-center mb-5 pb-5 ftco-animate">
           <div class="col-md-7 text-center heading-section">
-            <h2>Nossos destinos mais populares</h2>
+            <a href="memorias.html" target="_blank"><h2>Memórias</h2></a>
           </div>
         </div>
         <div class="row no-gutters">
@@ -243,232 +315,59 @@
         </div>
       </div>
     </section>
-    
-    
- <!--
-    <section class="ftco-section">
-      <div class="container-fluid">
-        <div class="row mb-5 pb-5 no-gutters">
-          <div class="col-lg-4 bg-light p-3 p-md-5 d-flex align-items-center heading-section ftco-animate">
-            <div>
-              <h2 class="mb-5 pb-3">Want to get our hottest travel deals top tips and advice? Subscribe us now!</h2>
-              <form action="#" class="subscribe-form">
-                <div class="form-group">
-                  <span class="icon icon-paper-plane"></span>
-                  <input type="text" class="form-control" placeholder="Enter your email address">
-                </div>
-              </form>
-            </div>
-          </div>
-
-          Hoteis
-          <div class="col-lg-8 p-2 pl-md-5 heading-section">
-            <h2 class="mb-5 p-2 pb-3 ftco-animate">Most Recommended Hotels</h2>
-            <div class="row no-gutters d-flex">
-              <div class="col-md-4 ftco-animate">
-                <a href="#" class="block-5" style="background-image: url('images/hotel-1.jpg');">
-                  <div class="text">
-                    <span class="price">$29/night</span>
-                    <h3 class="heading">Luxe Hotel</h3>
-                    <div class="post-meta">
-                      <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                    </div>
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span> <span>500 reviews</span></p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 ftco-animate">
-                <a href="#" class="block-5" style="background-image: url('images/hotel-2.jpg');">
-                  <div class="text">
-                    <span class="price">$29/night</span>
-                    <h3 class="heading">Deluxe Hotel</h3>
-                    <div class="post-meta">
-                      <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                    </div>
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span> <span>500 reviews</span></p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4 ftco-animate">
-                <a href="#" class="block-5" style="background-image: url('images/hotel-3.jpg');">
-                  <div class="text">
-                    <span class="price">$29/night</span>
-                    <h3 class="heading">Deluxe Hotel</h3>
-                    <div class="post-meta">
-                      <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                    </div>
-                    <p class="star-rate"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-half-full"></span> <span>500 reviews</span></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 	
-    </section>
-
-    <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2>Our Blog</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="carousel1 owl-carousel ftco-owl">
-            <div class="item">
-              <div class="blog-entry">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
-                </a>
-                <div class="text p-4">
-                  <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <p class="clearfix">
-                    <a href="#" class="float-left">Read more</a>
-                    <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="100">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
-                </a>
-                <div class="text p-4">
-                  <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <p class="clearfix">
-                    <a href="#" class="float-left">Read more</a>
-                    <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_7.jpg');">
-                </a>
-                <div class="text p-4">
-                  <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <p class="clearfix">
-                    <a href="#" class="float-left">Read more</a>
-                    <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_8.jpg');">
-                </a>
-                <div class="text p-4">
-                  <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <p class="clearfix">
-                    <a href="#" class="float-left">Read more</a>
-                    <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="blog-entry" data-aos-delay="200">
-                <a href="blog-single.html" class="block-20" style="background-image: url('images/image_9.jpg');">
-                </a>
-                <div class="text p-4">
-                  <div class="meta">
-                    <div><a href="#">July 7, 2018</a></div>
-                    <div><a href="#">Admin</a></div>
-                  </div>
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                  <p class="clearfix">
-                    <a href="#" class="float-left">Read more</a>
-                    <a href="#" class="float-right meta-chat"><span class="icon-chat"></span> 3</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	-->
-    <footer class="ftco-footer ftco-bg-catavento ftco-section">
+	
+    <footer class="ftco-section" id="rodape">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Voyage Fellow Tourist</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Contact Information</h2>
+              <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Catavento Contato</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
-                <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
-                <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
-                <li><a href="#" class="py-2 d-block">email@email.com</a></li>
+                <li><a href="#" class="py-2 d-block">Juiz de Fora, Minas Gerais</a></li>
+                <li><a href="#" class="py-2 d-block">(32) 9 9180-1300</a></li>
+                <li><a href="#" class="py-2 d-block">ag.cataventotur@email.com</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-whatsapp"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/ag.cataventotur" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://instagram.com/ag.cataventotur"  target="_blank"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-            <p>Desenvolvido por Riller Vincci</p>
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
       </div>
     </footer>
     
-  
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
     
   </body>
 </html>
