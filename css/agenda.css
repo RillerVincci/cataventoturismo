@@ -9,6 +9,10 @@
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.2);
   }
 
+  .primary-color{
+    color: #2d3575;
+  }
+
     /* Imagem de Fundo */
     .bkgImage{
       overflow: hidden;

@@ -54,6 +54,7 @@ html {
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
+
 body {
   margin: 0;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -299,6 +300,7 @@ template {
 
 [hidden] {
   display: none !important; }
+
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -2095,12 +2097,12 @@ fieldset:disabled a.btn {
 
 .btn-info {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8; }
+  background-color: #2d3573;
+  border-color: #2d3573; }
   .btn-info:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b; }
+    color: #ffffff;
+    background-color: #ff5f5f;
+    border-color: #ff5f5f; }
   .btn-info:focus, .btn-info.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
@@ -3552,7 +3554,7 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
-  color: #fff; }
+  color:#2d3573; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
     color: #fff; }
 
@@ -7267,7 +7269,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ff5f5f; }
+  color: #ff5f5f; } /*CorLink #2d3573*/
   a:hover {
     text-decoration: none;
     color: #ff5f5f; }
@@ -7276,7 +7278,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: #000;
+  color: #2d3573;
   font-weight: 400; }
 
 .text-primary {
@@ -7300,10 +7302,10 @@ h1, h2, h3, h4, h5,
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #f0f0f0;
+    color: #2d3573;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #fff; }
+      color: #ff5f5f; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-top: 10px;
@@ -7448,15 +7450,15 @@ h1, h2, h3, h4, h5,
     left: -20px; }
   .owl-carousel:hover .owl-nav .owl-next {
     right: -20px; }
-  .owl-carousel.home-slider {
+  .owl-carousel .home-slider {
     z-index: 0;
     position: relative; }
     .owl-carousel.home-slider .slider-item {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      height: calc(100vh - 117px);
-      min-height: 700px;
+      height: 600px;
+      max-height: 603px;
       position: relative; }
       .owl-carousel.home-slider .slider-item .overlay {
         position: absolute;
@@ -7469,8 +7471,8 @@ h1, h2, h3, h4, h5,
         opacity: .2; }
       .owl-carousel.home-slider .slider-item .slider-text {
         color: #fff;
-        height: calc(100vh - 117px);
-        min-height: 700px; }
+        height: 600px;
+        max-height: 603px; }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           font-size: 72px;
           color: #fff;
@@ -7977,7 +7979,7 @@ textarea.form-control {
     width: 50px;
     display: block;
     float: left;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     position: relative; }
     .ftco-footer-social li a span {
