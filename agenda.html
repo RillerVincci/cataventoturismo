@@ -9,7 +9,137 @@
   </head>
   
   <body>
-    
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+      function listTravels(){
+        var viagens = [
+          { 
+            imagem: "images/agenda/memorialdaresistencia.jpg", 
+            periodo: "6", 
+            mes: "Abr", 
+            ano: "2019",
+            destino: "São Paulo, São Paulo",
+            titulo: "Memorial da Resistência",
+            descricao: "Adicione uma descrição", 
+            preco: "200,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "14", 
+            mes: "Abr", 
+            ano: "2019",
+            destino: "Rio de Janeiro, Rio de Janeiro",
+            titulo: "Tour pelo Rio(Pão de Açucar)",
+            descricao: "Adicione um título", 
+            preco: "400,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "26 A 28", 
+            mes: "Abr", 
+            ano: "2019",
+            destino: "Conservatória, Rio de Janeiro",
+            titulo: "Festa do Café, Cachaça e Serenata",
+            descricao: "Adicione um título", 
+            preco: "450,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "25 A 26", 
+            mes: "Maio", 
+            ano: "2019",
+            destino: "Brumadinho, Minas Gerais",
+            titulo: "Instituto Inhotim",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "18 A 19", 
+            mes: "Maio", 
+            ano: "2019",
+            destino: "Aparonga, Minas Gerais",
+            titulo: "Serra do Brigadeiro",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "19", 
+            mes: "Maio", 
+            ano: "2019",
+            destino: "Rio de Janeiro, Rio de Janeiro",
+            titulo: "Feira Literária LER",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "28 A 30", 
+            mes: "Jun", 
+            ano: "2019",
+            destino: "Holambra, São Paulo",
+            titulo: "Adicione um título",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+
+          { 
+            imagem: "images/agenda/catavento.png", 
+            periodo: "3ª S", 
+            mes: "Jun", 
+            ano: "2019",
+            destino: "Petrópolis, Rio de Janeiro",
+            titulo: "Bauernfest",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+
+          { 
+            imagem: "images/agenda/capitoliocascata.jpg", 
+            periodo: "14 A 16", 
+            mes: "Jun", 
+            ano: "2019",
+            destino: "Capitólio, Minas Gerais",
+            titulo: "Mar de Minas",
+            descricao: "Adicione um título", 
+            preco: "000,00",
+          },
+        ];
+
+        for(var i=0; viagens.length>i; i++){          
+          $('#travelslist').append(        
+            '<div class="travelCard col-lg-4 ">'+
+              '<div class="wrapper">'+
+                '<a class="bkgImage" style="background-image: url('+viagens[i].imagem+');">'+
+                  '<div class="date">'+
+                    '<span class="day">'+viagens[i].periodo+'</span>'+
+                    '<span class="month">'+viagens[i].mes+'</span>'+
+                    '<span class="year">'+viagens[i].ano+'</span>'+
+                  '</div>'+
+                '</a>'+
+                '<div class="data">'+
+                  '<div class="content">'+
+                    '<span class="travelDescription">'+viagens[i].destino+'</span>'+
+                    '<h3 class="title"><a>'+viagens[i].titulo+'</a></h3>'+
+                    '<p class="text">'+ viagens[i].descricao+
+                      '<br />O valor da viagem é R$ '+viagens[i].preco+' e pode ser dividido em 3 vezes no depósito'+
+                      ' bancário, transferência ou em até 10 vezes no cartão de crédito.'+
+                    '</p>'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+            '</div>');
+        };		
+      }
+    </script>
+
     <nav class="navbar navbar-expand-lg  ftco_navbar ftco-navbar-light" id="ftco-navbar"  >
       <div class="container">
         <a class="navbar-brand">O</a>
@@ -38,8 +168,8 @@
     <section class="ftco-section">
       <div class="container">
         <h2 style="text-align: center">Agenda</h2>
-        <div class="row">
-          <div class="travelCard col-lg-4 ">
+        <div class="row" id="travelslist">
+          <!--<div class="travelCard col-lg-4 ">
             <div class="wrapper">
               <a class="bkgImage" style="background-image: url('images/agenda/arraialdocabo.jpg');">
                 <div class="date">
@@ -60,11 +190,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div>-->
       
         </div>
         <div class="text-center heading-section">
-            <a href="index.html"><input type="button" value="Página Principal" class="btn btn-info py-3 px-5" style="margin:30px"></a>
+            <a href="index.html"><input type="button" id="disparar" value="Página Principal" class="btn btn-info py-3 px-5" style="margin:30px"></a>
         </div>
       </div>    
     </section>    
@@ -173,11 +303,40 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        listTravels();
+      });
     
+      /*function requisicao(op){
+        alert("VIVA");
+       
+        //$('#table8').empty(); $('#table9').empty();  //Limpar a tabela de exibi��o dos dados.
+        
+        $.ajax({ // In�cio da fun��o ajax. Permite a conex�o com o DB 
+          type:'post',		 //M�todo HTTP post para o envio dos dados.
+          dataType: 'json',	 //Tipo de retorno dos dados que ser�o consultados
+          async: true,
+          url: './controlador/atsCategoriaControl.php', //Definindo o arquivo onde ser�o buscados os dados
+          data: informe,       // Pega todos os dados dentro da vari�vel informe.
+          success: function(dados){
+            tabBuild(dados);
+            if(op == 2) alert("Categoria incluida com sucesso!");			
+          }, // T�rmino Sucess
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+              alert("Essa requisicao nao existe!");			
+          }//T�rmino Error
+        }); //T�rmino Ajax
+        $('.swoop').css('display','none'); // T�rmino Recurso "Carregando"
+        
+      }*/
+    </script>
+
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
